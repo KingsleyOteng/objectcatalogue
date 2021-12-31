@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="19.0" layoutY="348.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="567.0" text="Go" />
+      <Label layoutX="19.0" layoutY="89.0" text="start date:" />
+      <Label layoutX="19.0" layoutY="121.0" text="end date:" />
+      <Label layoutX="19.0" layoutY="153.0" text="output type" />
+      <Label layoutX="19.0" layoutY="58.0" text="database name:" />
+      <ListView layoutX="327.0" layoutY="158.0" prefHeight="173.0" prefWidth="207.0" />
+      <TextField layoutX="324.0" layoutY="53.0" prefHeight="27.0" prefWidth="207.0" />
+      <DatePicker layoutX="324.0" layoutY="84.0" prefHeight="27.0" prefWidth="207.0" />
+      <DatePicker layoutX="324.0" layoutY="116.0" prefHeight="27.0" prefWidth="207.0" />
+   </children>
+</Pane>
