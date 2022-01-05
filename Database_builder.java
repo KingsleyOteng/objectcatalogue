@@ -9,6 +9,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
 /**
@@ -19,6 +21,7 @@ public class Database_builder extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
+        final MenuButton button1 = new MenuButton("Plain Button", null, new MenuItem("Item 1"), new MenuItem("Item 2"));
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
