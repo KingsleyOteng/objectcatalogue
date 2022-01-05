@@ -25,7 +25,7 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Label label;
-    private MenuButton menuButton1 = new MenuButton("Cities");
+    private MenuButton menuButton;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
@@ -36,7 +36,7 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
       label.setText("Hello World!");
-      menuButton1.setText("Hello World!");
+     
 
     }    
     
