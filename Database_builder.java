@@ -19,11 +19,13 @@ import javafx.stage.Stage;
  */
 public class Database_builder extends Application {
     
+    
     @Override
     public void start(Stage stage) throws Exception {
-        final MenuButton button1 = new MenuButton("Plain Button", null, new MenuItem("Item 1"), new MenuItem("Item 2"));
+       // final MenuButton label = new MenuButton("Plain Button", null, new MenuItem("Item 1"), new MenuItem("Item 2"));
+       
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+        final MenuButton label = new MenuButton("Plain Button", null, new MenuItem("Item 1"), new MenuItem("Item 2"));
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
