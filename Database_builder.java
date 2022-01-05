@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -19,13 +20,13 @@ import javafx.stage.Stage;
  */
 public class Database_builder extends Application {
     
-    
+  
     @Override
     public void start(Stage stage) throws Exception {
        // final MenuButton label = new MenuButton("Plain Button", null, new MenuItem("Item 1"), new MenuItem("Item 2"));
        
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        final MenuButton label = new MenuButton("Plain Button", null, new MenuItem("Item 1"), new MenuItem("Item 2"));
+        final MenuButton menuButton = new MenuButton("Plain Button", null, new MenuItem("Item 1"), new MenuItem("Item 2"));
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
