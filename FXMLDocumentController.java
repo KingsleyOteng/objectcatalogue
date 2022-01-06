@@ -19,7 +19,8 @@ import javafx.scene.control.MenuItem;
 
 /**
  *
- * @author kwadwooteng-amoko
+ * @author kwadwooteng-amoako
+ * @date january 6th 20212
  */
 public class FXMLDocumentController implements Initializable {
     
@@ -35,7 +36,7 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-      label.setText("Hello World!");
+      //label.setText("Hello World!");
      
 
     }    
