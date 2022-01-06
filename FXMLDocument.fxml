@@ -14,7 +14,7 @@
       <Label fx:id="label" layoutX="5.0" layoutY="43.0" prefHeight="17.0" prefWidth="114.0" text="database name" />
       <Label layoutX="5.0" layoutY="78.0" prefHeight="17.0" prefWidth="114.0" text="start date" />
       <Label layoutX="5.0" layoutY="112.0" prefHeight="17.0" prefWidth="114.0" text="end date" />
-      <Label layoutX="14.0" layoutY="198.0" prefHeight="17.0" prefWidth="114.0" text="Output format" />
+      <Label layoutX="3.0" layoutY="199.0" prefHeight="17.0" prefWidth="114.0" text="Output format" />
       <DatePicker layoutX="156.0" layoutY="73.0" prefHeight="27.0" prefWidth="239.0" />
       <DatePicker layoutX="156.0" layoutY="107.0" prefHeight="27.0" prefWidth="239.0" />
       <CheckBox layoutX="3.0" layoutY="221.0" mnemonicParsing="false" text="Text">
@@ -58,5 +58,6 @@
          </font>
       </CheckBox>
       <Label layoutX="3.0" layoutY="147.0" prefHeight="17.0" prefWidth="114.0" text="Filter" />
+      <Label layoutX="147.0" layoutY="8.0" prefHeight="17.0" prefWidth="100.0" text="Database builder" textAlignment="CENTER" />
     </children>
 </AnchorPane>
