@@ -58,6 +58,6 @@
          </font>
       </CheckBox>
       <Label layoutX="3.0" layoutY="147.0" prefHeight="17.0" prefWidth="114.0" text="Filter" />
-      <Label layoutX="147.0" layoutY="8.0" prefHeight="17.0" prefWidth="100.0" text="Database builder" textAlignment="CENTER" />
+      <Label layoutX="163.0" layoutY="10.0" prefHeight="17.0" prefWidth="100.0" text="Database builder" textAlignment="CENTER" />
     </children>
 </AnchorPane>
