@@ -34,4 +34,7 @@ public class Build_database  {
     
     }
     
+    public static String string_out() throws IOException {
+        return "hello";
+    }
 }

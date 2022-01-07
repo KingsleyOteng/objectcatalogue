@@ -27,8 +27,10 @@ public class Database_builder extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         final MenuButton menuButton = new MenuButton("Plain Button", null, new MenuItem("Item 1"), new MenuItem("Item 2"));
-        Scene scene = new Scene(root);
         
+        Build_database nb = new Build_database();
+        
+        Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
