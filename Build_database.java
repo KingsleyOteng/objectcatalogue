@@ -30,9 +30,20 @@ public class Build_database  {
     Elements pageElements = page.select("a[href]");
 
     ArrayList<String> hyperLinks = new ArrayList<String>();
+    
+    System.out.println("");
+    
+    
 
     //iterating and extracting
- 
+    for (Element e:pageElements) {
+      hyperLinks.add("Text: " + e.text());
+      hyperLinks.add("Link: " + e.attr("href"));
+    }
+
+    for (String s : hyperLinks) {
+      System.out.println(s);
+    }
     
     
     }
