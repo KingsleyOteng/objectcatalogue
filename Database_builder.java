@@ -30,6 +30,8 @@ public class Database_builder extends Application {
         
         Build_database nb = new Build_database();
         
+        System.out.println(nb.string_out());
+        
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
