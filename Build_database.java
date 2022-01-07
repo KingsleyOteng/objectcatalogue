@@ -24,27 +24,14 @@ public class Build_database  {
     
     public static void main() throws IOException {
         
-    Document page = Jsoup.connect("https://www.waterless-toilet.com/top-6-best-composting-toilets-to-choose/").get();
+   // Document page = Jsoup.connect("https://www.waterless-toilet.com/top-6-best-composting-toilets-to-choose/").get();
 
-    //selecting all hyperlinks
-    Elements pageElements = page.select("a[href]");
-
-    ArrayList<String> hyperLinks = new ArrayList<String>();
     
-    System.out.println("");
+
     
     
 
-    //iterating and extracting
-    for (Element e:pageElements) {
-      hyperLinks.add("Text: " + e.text());
-      hyperLinks.add("Link: " + e.attr("href"));
-    }
-
-    for (String s : hyperLinks) {
-      System.out.println(s);
-    }
-    
+ 
     
     }
     
