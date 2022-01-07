@@ -20,7 +20,7 @@ import javafx.scene.control.MenuItem;
 /**
  *
  * @author kwadwooteng-amoako
- * @date january 6th 20212
+ * @date january 6th 2022
  */
 public class FXMLDocumentController implements Initializable {
     

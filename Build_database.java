@@ -10,6 +10,28 @@ package database_builder;
  * @author kwadwooteng-amoako
  * @date january 6th 2022
  */
-public class Build_database {
+
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class Build_database  {
+    
+    public static void main() throws IOException {
+        
+    Document page = Jsoup.connect("https://www.waterless-toilet.com/top-6-best-composting-toilets-to-choose/").get();
+
+    //selecting all hyperlinks
+    Elements pageElements = page.select("a[href]");
+
+    ArrayList<String> hyperLinks = new ArrayList<String>();
+    
+    
+    }
     
 }
