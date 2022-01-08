@@ -27,11 +27,14 @@ public class Build_database  {
    // Document page = Jsoup.connect("https://www.waterless-toilet.com/top-6-best-composting-toilets-to-choose/").get();
 
     
+   final String html = "<td align=\"center\"><a href=\"http://www.zipcodestogo.com/Hialeah/FL/33011/\">33011</a></td> ";
+    final Elements elements = Jsoup.parse(html).getElementsMatchingOwnText("^[0-9]{5,5}$");
 
-    
-    
+    for (final Element element : elements) {
+        System.out.println("element = [" + element + "]");
+        System.out.println("zip = [" + element.text() + "]");
+    }
 
- 
     
     }
     
