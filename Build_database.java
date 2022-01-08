@@ -35,6 +35,7 @@ public class Build_database  {
         System.out.println("zip = [" + element.text() + "]");
     }
     
+    
     // https://aboullaite.me/jsoup-html-parser-tutorial-examples/
     String url = "http://www.google.com";
     Document doc = Jsoup.connect(url).get();
