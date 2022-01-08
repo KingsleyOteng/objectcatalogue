@@ -38,10 +38,10 @@ public class Build_database  {
     try {
     
     // https://aboullaite.me/jsoup-html-parser-tutorial-examples/
-    String url = "http://www.google.com";
+    String url = "https://celestrak.com/NORAD/elements/tle-new.txt";
     Document doc = Jsoup.connect(url).get();
             String title = doc.title();
-            System.out.println(title);
+            System.out.println(doc.text());
     }
     catch (IOException e) 
     {
