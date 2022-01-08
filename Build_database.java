@@ -14,6 +14,10 @@ package database_builder;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -42,7 +46,14 @@ public class Build_database  {
     Document doc = Jsoup.connect(url).get();
             String title = doc.title();
             System.out.println(doc.text());
-            // Elements elements = Jsoup.parse(html).getElementsMatchingOwnText("^[0-9]{5,5}$");
+            
+            Pattern p = Pattern.compile("([A-Z])\\w+-([0-9])+");
+            Matcher matcher = p.matcher(doc.text());
+            Set<String> emails = new HashSet<String>();
+        while (matcher.find()) {
+            emails.add(matcher.group());
+            System.out.println(matcher.group());
+        }
     }
     catch (IOException e) 
     {
