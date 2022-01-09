@@ -1,0 +1,10 @@
+#defult sensor details:
+test: one
+azimuth: two
+location_longitude: three
+location_latitude: four
+sensor_start_time: five
+sensor_end_time: six
+time_zone: seven
+sensor_type: eight
+city: nine
